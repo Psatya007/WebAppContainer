@@ -2,7 +2,7 @@ FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /app
 # Copy csproj and restore as distinct layers
 RUN pwd
-COPY ${source:-WebAppContainer.csproj} ./
+COPY ${CSProjPath:-WebAppContainer.csproj} ./
 RUN dotnet restore
 # Copy everything else and build
 COPY . ./
