@@ -14,7 +14,7 @@ namespace WebAppContainer.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "CI using Azure DevOps", "Azure Container Registry and Web App for Containers" };
+            return new string[] { "CI using Azure DevOps", "CD", "Azure Container Registry and Web App for Containers" };
         }
 
         // GET api/values/5
