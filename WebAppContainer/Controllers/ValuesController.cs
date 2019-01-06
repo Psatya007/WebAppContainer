@@ -21,7 +21,7 @@ namespace WebAppContainer.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            return "CI-CD using Azure Devops";
         }
 
         // POST api/values
